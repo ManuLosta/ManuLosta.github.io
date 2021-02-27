@@ -1,7 +1,7 @@
 :root {
   --off-white: #f5f5f5;
   --white: #fff;
-  --warm--black:#181716;
+  --warm--black: #181716;
 }
 
 * {
@@ -15,7 +15,8 @@ html {
 }
 
 body {
-  font-family:'VT323', monospace;;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--off-white);
 }
 
 header {
@@ -51,3 +52,44 @@ header .header--title {
   background-color: #fff;
 }
 
+main {
+  width: 64%;
+  min-width: 960px;
+  margin: 30px auto 0;
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0px 0px 22px -9px rgba(0, 0, 0, 0.75);
+}
+
+main .main__presentation {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__presentation .main__presentation--icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--warm--black);
+}
+
+.main__presentation .main__presentation--title {
+  margin-top: 50px;
+  font-size: 3rem;
+  text-align: center;
+  color: var(--warm--black);
+}
+
+.main__presentation .main__presentation--content {
+  margin-top: 20px;
+  width: 90%;
+  font-size: 2.1rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--warm--black);
+}
