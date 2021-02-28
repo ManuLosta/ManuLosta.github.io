@@ -62,6 +62,7 @@ main {
 }
 
 main .main__presentation {
+  padding: 0 40px;
   position: relative;
   width: 100%;
   display: flex;
@@ -80,11 +81,13 @@ main .main__presentation {
 
 .main__presentation--content {
   margin-top: 50px;
-  padding-left: 40px;
   width: 50%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .main__presentation--content h2 {
+  width: 100%;
   font-size: 3rem;
   color: var(--warm--black);
 }
@@ -95,8 +98,21 @@ main .main__presentation {
   animation: cursor 1s infinite;
 }
 
+.main__presentation--content .presentation__user-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+  background-image: url("../assets/user-male.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .main__presentation--content p {
-  margin: 20px auto 0;
+  width: calc(100% - 40px);
+  margin-top: 20px;
+  padding-left: 15px;
   font-size: 2.1rem;
   font-weight: 400;
   color: var(--warm--black);
@@ -110,7 +126,6 @@ main .main__presentation {
 .main__presentation--image {
   display: inline-block;
   margin-top: 50px;
-  padding-right: 30px;
   width: 50%;
   height: 300px;
   background-image: url("../assets/coding.svg");
@@ -121,6 +136,7 @@ main .main__presentation {
 
 main .main__studies {
   margin-top: 50px;
+  padding: 0 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -128,11 +144,13 @@ main .main__studies {
 
 .main__studies--content {
   margin-top: 50px;
-  padding-right: 40px;
   width: 50%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .main__studies--content h2 {
+  width: 100%;
   font-size: 3rem;
   color: var(--warm--black);  
 }
@@ -143,8 +161,21 @@ main .main__studies {
   animation: cursor 1s infinite;
 }
 
+.main__studies--content .studies__book-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+  background-image: url("../assets/book-3.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .main__studies--content p {
-  margin: 20px auto 0;
+  width: calc(100% - 40px);
+  margin-top: 20px;
+  padding-left: 15px;
   font-size: 2.1rem;
   font-weight: 400;
   color: var(--warm--black);
@@ -157,7 +188,6 @@ main .main__studies {
 
 .main__studies--image {
   display: inline-block;
-  padding-left: 30px;
   width: 50%;
   height: 300px;
   background-image: url("../assets/studies.svg");
@@ -165,6 +195,27 @@ main .main__studies {
   background-size: contain;
   background-position: center;
 }
+
+main .main__habilities {
+  margin-top: 80px;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main__habilities--title {
+  font-size: 3rem;
+  color: var(--warm--black); 
+}
+
+.main__habilities--title:after {
+  content: " _";
+  opacity: 0;
+  animation: cursor 1s infinite;
+}
+
+
 
 @keyframes cursor {
   0% {
