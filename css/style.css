@@ -196,26 +196,37 @@ main .main__studies {
   background-position: center;
 }
 
-main .main__habilities {
+main .main__abilities {
   margin-top: 80px;
   padding: 0 40px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 
-.main__habilities--title {
+.main__abilities--title {
   font-size: 3rem;
   color: var(--warm--black); 
 }
 
-.main__habilities--title:after {
+.main__abilities--title:after {
   content: " _";
   opacity: 0;
   animation: cursor 1s infinite;
 }
 
+.main__abilities--container {
+  margin-top: 30px;
+  display: flex;
+}
 
+.abilities__card {
+  width: 250px;
+  height: 300px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.75);
+}
+
+.abilities__card img {
+  width: 250px;
+}
 
 @keyframes cursor {
   0% {
