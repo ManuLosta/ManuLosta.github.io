@@ -225,9 +225,21 @@ main .main__studies {
 main .main__abilities {
   margin-top: 80px;
   padding: 0 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.main__abilities--content {
+  width: 50%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .main__abilities--title {
+  width: 100%;
   font-size: 3rem;
   color: var(--warm--black); 
 }
@@ -238,9 +250,49 @@ main .main__abilities {
   animation: cursor 1s infinite;
 }
 
-.main__abilities--container {
+.main__abilities--content .abilities__icon {
+  height: 40px;
+  width: 40px;
+  margin-top: 50px;
+  fill: var(--warm--black);
+}
+
+.abilities__content--container {
+  width: calc(100% - 40px);
+  padding-left: 25px;
   margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.abilities__content--container h3 {
+  margin-top: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--warm--black);
   display: flex;
+  align-items: center;
+}
+
+.abilities__content--container h3 .tick {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  background-image: url("../assets/tick.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.main__abilities--image {
+  width: 50%;
+  height: 300px;
+  background-image: url("../assets/abilities.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 @keyframes cursor {
