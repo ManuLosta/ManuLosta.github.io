@@ -1,0 +1,42 @@
+.header__landing-page--title {
+  width: 292px;
+}
+
+.header__landing-page--title h1,
+.header__landing-page--title p,
+.header__landing-page--title span {
+  font-size: 4.6rem;
+}
+
+.header__landing-page .header__landing-page--text {
+  font-size: 1.8rem;
+}
+
+main .main__presentation,
+main .main__studies,
+main .main__abilities {
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.main__presentation--content,
+.main__studies--content,
+.main__abilities--content {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main__presentation--content {
+  margin-top: 80px;
+}
+
+.main__presentation--image,
+.main__studies--image,
+.main__abilities--image {
+  width: 80%;
+  margin: 20px auto 0;
+}
+
+main .main__studies {
+  flex-wrap: wrap-reverse;
+}
