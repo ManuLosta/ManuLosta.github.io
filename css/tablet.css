@@ -7,6 +7,10 @@ main {
   border-radius: 0;
 }
 
+.projects__card {
+  width: 40%;
+}
+
 footer {
   width: 100%;
 }

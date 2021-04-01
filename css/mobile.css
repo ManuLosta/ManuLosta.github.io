@@ -40,3 +40,9 @@ main .main__abilities {
 main .main__studies {
   flex-wrap: wrap-reverse;
 }
+
+.projects__card {
+  width: 70%;
+  min-width: 290px;
+  margin: 20px 15px;
+}
