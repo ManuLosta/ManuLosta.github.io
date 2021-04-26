@@ -41,6 +41,17 @@ main .main__studies {
   flex-wrap: wrap-reverse;
 }
 
+.abilities__content--container p {
+  font-size: 1.8rem;
+  margin: 0 auto 18px;
+}
+
+.abilities__content--container p .tick {
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+}
+
 .projects__card {
   width: 70%;
   min-width: 290px;
