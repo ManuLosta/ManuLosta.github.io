@@ -1,6 +1,6 @@
 class Retype {
   constructor() {
-    this.retypePhrases = ['Hola.', 'Ciao.', 'Bonjour.', 'Hallo.'];
+    this.retypePhrases = ['Hola.', 'Ciao.', 'Bonjour.', 'Hallo.', 'Hello.'];
     this.element = document.getElementById('retype');
     this.index = -1;
     this.start();
@@ -9,7 +9,7 @@ class Retype {
   start() {
     setTimeout(() => {
       this.deleteLetter();
-    }, 3000);
+    }, 2000);
   }
 
   deleteLetter() {
