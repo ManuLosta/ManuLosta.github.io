@@ -1,0 +1,13 @@
+.header {
+  background-image: url('../assets/header-background-mobile.svg');
+  background-position: 20px 20px;
+}
+
+.header__title h1 {
+  font-size: 6.5rem;
+  min-height: 88px;
+}
+
+.header__title p {
+  font-size: 3rem;
+}

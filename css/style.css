@@ -49,11 +49,12 @@ body::-webkit-scrollbar {
 .header {
   width: 100%;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: start;
   position: relative;
   overflow: hidden;
+  background-image: url('../assets/header-background.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 45px 35px;
 }
 
 .header__pattern {
@@ -90,6 +91,9 @@ body::-webkit-scrollbar {
 }
 
 .header__title {
+  position: absolute;
+  top: 40%;
+  width: 100vw;
   padding: 0 5vw;
   color: var(--fg-1);
 }
@@ -141,6 +145,10 @@ body::-webkit-scrollbar {
   animation: titilar 3s infinite ease-in-out;
 }
 
+.header__scroll.hidden {
+  animation: hide 750ms forwards;
+}
+
 .header__scroll p {
   font-size: 1.8rem;
   color: var(--fg-1);
@@ -184,5 +192,11 @@ body::-webkit-scrollbar {
   }
   50% {
     opacity: 0.2;
+  }
+}
+
+@keyframes hide {
+  to {
+    opacity: 0;
   }
 }
