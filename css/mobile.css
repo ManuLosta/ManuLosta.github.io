@@ -20,3 +20,21 @@
   transform: translateX(20px);
   opacity: 1;
 }
+
+.main__skills--container {
+  width: 90%;
+  grid-template-columns: 1fr;
+}
+
+.main__skills--title {
+  margin-bottom: 50px;
+  font-size: 5rem;
+}
+
+.main__skills--item p {
+  font-size: 2.2rem;
+}
+
+.main__skills--item {
+  margin: 20px;
+}

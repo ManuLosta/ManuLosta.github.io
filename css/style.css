@@ -133,7 +133,6 @@ body::-webkit-scrollbar {
   position: relative;
   height: 80vh;
   margin-top: 40vh;
-  overflow: hidden;
 }
 
 .main__info--pattern {
@@ -175,6 +174,68 @@ body::-webkit-scrollbar {
 
 .main__info--pattern.appear:hover {
   transform: scale(1.1) rotate(70deg);
+}
+
+.main__skills {
+  margin-top: 40vh;
+  height: 80vh;
+}
+
+.main__skills--title {
+  margin: 0 0 100px 10%;
+  font-size: 8rem;
+  color: var(--fg-1);
+  font-weight: 900;
+  opacity: 0;
+  transition: all 1s;
+  transform: translateY(-50px);
+}
+
+.main__skills--title.appear {
+  transform: translateY(50px);
+  opacity: 1;
+}
+
+.main__skills--container {
+  width: 70%;
+  margin-left: calc(10% - 30px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main__skills--item {
+  width: 90%;
+  margin: 30px;
+  border: 1px solid var(--fg-1);
+}
+
+.skills__progressbar {
+  width: 0%;
+  height: 10px;
+  background-color: var(--fg-1);
+  transition: all 2s;
+}
+
+.skills__progressbar.appear#progressbar-html {
+  width: 90%;
+}
+
+.skills__progressbar.appear#progressbar-css {
+  width: 80%;
+}
+
+.skills__progressbar.appear#progressbar-js {
+  width: 60%;
+}
+
+.skills__progressbar.appear#progressbar-reactjs {
+  width: 40%;
+}
+
+.main__skills--item p {
+  margin: 10px 10px;
+  font-size: 2.8rem;
+  color: var(--fg-1);
 }
 
 @keyframes rotate {
