@@ -11,3 +11,12 @@
 .header__title p {
   font-size: 3rem;
 }
+
+.main__info p {
+  width: 90%;
+}
+
+.main__info p.appear {
+  transform: translateX(20px);
+  opacity: 1;
+}
